@@ -15,6 +15,14 @@ in {
 		etc."wallpapers/lightdm.png".source = ./lightdm.png;
 	};
 
+	fonts = {
+		enableDefaultPackages = true;
+		fontconfig.enable = true;
+		packages = with pkgs; [
+			(nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
+		];
+	};
+
 	services = {
 		displayManager.defaultSession = "none+i3";
 		xserver.displayManager.lightdm = {
