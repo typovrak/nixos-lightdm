@@ -12,7 +12,7 @@ in {
 			catppuccin-gtk
 		];
 		etc."lightdm/lightdm-gtk-greeter.conf".source = lib.mkForce ./lightdm-gtk-greeter.conf;
-		etc."wallpapers/lightdm.png".source = ./lightdm.png
+		etc."wallpapers/lightdm.png".source = ./lightdm.png;
 	};
 
 	services = {
