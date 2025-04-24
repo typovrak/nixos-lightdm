@@ -1,0 +1,6 @@
+[User]
+Session=none+i3
+SessionType=x11
+XSession=none+i3
+Icon=/var/lib/AccountsService/icons/typovrak
+SystemAccount=false

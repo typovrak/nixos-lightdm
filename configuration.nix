@@ -5,6 +5,14 @@ let
 	group = config.users.users.${username}.group or "users";
 	home = config.users.users.${username}.home;
 in {
+	system.activationScripts.lightdm = ''
+		cp typovrak.png /var/lib/AccountsService/icons/typovrak
+		chmod 644 /var/lib/AccountsService/icons/typovrak
+
+		cp typovrak /var/lib/AccountsService/users/typovrak
+		chmod 644 /var/lib/AccountsService/users/typovrak
+	'';
+
 	environment = {
 		systemPackages = with pkgs; [
 			lightdm-gtk-greeter
