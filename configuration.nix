@@ -9,7 +9,10 @@ in {
 		systemPackages = with pkgs; [
 			lightdm-gtk-greeter
 			papirus-icon-theme
-			catppuccin-gtk
+			catppuccin-gtk.override {
+				accents = [ "green" ];
+				variant = "mocha";
+			};
 		];
 		etc."lightdm/lightdm-gtk-greeter.conf".source = lib.mkForce ./lightdm-gtk-greeter.conf;
 		etc."wallpapers/lightdm.png".source = ./lightdm.png;
