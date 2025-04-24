@@ -23,7 +23,6 @@ in {
 			})
 		];
 		etc."lightdm/lightdm-gtk-greeter.conf".source = lib.mkForce ./lightdm-gtk-greeter.conf;
-		etc."lightdm/logo.png".source = ./logo.png;
 		etc."wallpapers/lightdm.png".source = ./lightdm.png;
 	};
 
