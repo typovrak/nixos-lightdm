@@ -36,9 +36,14 @@ in {
 
 	services = {
 		displayManager.defaultSession = "none+i3";
-		xserver.displayManager.lightdm = {
-			enable = true;
-			greeters.gtk.enable = true;
+		xserver.displayManager = {
+			setupCommands = ''
+				xrandr --output eDP-1-1 --primary --auto --output HDMI-0 --off
+			'';
+			lightdm = {
+				enable = true;
+				greeters.gtk.enable = true;
+			};
 		};
 	};
 }
