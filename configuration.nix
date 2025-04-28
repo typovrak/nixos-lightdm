@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 
 let
-	username = "typovrak";
+	username = config.username;
 	group = config.users.users.${username}.group or "users";
 	home = config.users.users.${username}.home;
 in {
