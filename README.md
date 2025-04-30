@@ -1,4 +1,4 @@
-# 💡 NixOS LightDM
+# 🔐 NixOS LightDM
 
 > NixOS module to configure LightDM-GTK greeter with a custom user icon, wallpaper, theme accents and JetBrains Mono Nerd Font.
 
