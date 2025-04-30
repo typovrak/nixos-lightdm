@@ -59,7 +59,7 @@ sudo nixos-rebuild switch
 
 Logout of your system to see your new Catppuccin Display Manager
 ```bash
-sudo systemctl stop display-manager
+sudo systemctl restart display-manager
 ```
 
 ## ❤️ Support
